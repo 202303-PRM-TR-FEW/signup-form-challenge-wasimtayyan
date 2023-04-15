@@ -16,12 +16,12 @@ The designs were created to the following widths:
 
 ### Accent
 
-- Blue: hsl(248, 32%, 49%)
+--Blue: hsl(248, 32%, 49%)
 
 ### Neutral
 
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
+--Dark-Blue: hsl(249, 10%, 26%) 
+--Grayish-Blue: hsl(246, 25%, 77%)
 
 ## Typography
 

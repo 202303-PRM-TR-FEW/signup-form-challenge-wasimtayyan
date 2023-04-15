@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+--Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--Red);
+    background-image: url(./images/bg-intro-mobile.png);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    width: 300px;
+}
+h1{
+    margin: 1em 0em;
+}
+.text{
+    color: white;
+    text-align: center;
+    margin: 3em;
+    max-width: 300px;
+}
+.text p {
+
+    opacity: 0.7;
+}
+.btn-free{
+    width: 100%;
+    margin-bottom: 1em;
+    box-shadow: 0px 6px 0px hsl(2, 62%, 62%);
+    padding: 1.2em 5.3em;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+}
+.input-forms{
+    background-color: white;
+    border-radius: 15px;
+    /* width: 100%; */
+    padding: 1.5em ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 0px hsl(2, 62%, 62%);
+    margin-bottom: 1em;
+}
+.input{
+    width: 90%;
+    padding: 1em 1em;
+    position:0px 0px 0px 0px ;
+    margin-left: auto;
+    margin-right:auto;
+    border: 1px solid var(--Grayish-Blue);
+    font-weight: 800;
+    margin-bottom: 10px;
+    outline-color: var(--Blue);
+}
+
+.erorr{
+    color: var(--Red);
+    margin: 2px;
+    align-self: flex-start;
+    font-weight: 500;
+    display: none;
+}
+input.invalid{
+     border: 3px solid hsl(0, 100%, 74%);
+     background-image: url("../images/icon-error.svg");
+     background-repeat: no-repeat;
+     background-position: 95%;
+     color: hsl(0, 100%, 74%);
+     outline-color: var(--Red);
+}
+
+.disableBtn {
+    background-color: var(--Red);
+    box-shadow: hsl(0, 7%, 67%);
+}
+.disableBtn:hover{
+    background-color: hsl(0, 100%, 70%);
+}
+.enableBtn{
+    background-color: var(--Green);
+}
+.enableBtn:hover{
+  background-color: hsl(154, 83%, 61%);
+    box-shadow:  hsl(154, 57%, 43%);   
+}
+#btnClaim{
+    width: 100%;
+    padding: 1.5em 1em;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--Red);
+    font-weight: 500;
+}
+#terms{
+    color: var(--Grayish-Blue);
+    font-size: small;
+    padding: 1em;
+    line-height: 2em;
+    text-align: center;
+}
+@media screen and (min-width:375px) {
+    body{
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    } 
+    .container2 {
+        width: 50%;
+        max-width: 500px;
+        margin-top: 5em;
+    }
+    .text{
+    max-width: 40%;
+    text-align: start;
+    }
+}
