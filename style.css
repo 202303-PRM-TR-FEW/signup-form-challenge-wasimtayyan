@@ -125,7 +125,7 @@ a{
     line-height: 2em;
     text-align: center;
 }
-@media screen and (min-width:375px) {
+@media screen and (min-width:500px) {
     body{
         background-image: url(./images/bg-intro-desktop.png);
     }
